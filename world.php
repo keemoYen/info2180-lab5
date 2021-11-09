@@ -4,9 +4,10 @@ $username = 'lab5_user';
 $password = 'password123';
 $dbname = 'world';
 
-$country = $_GET["country"];
+$country = $_POST['country'];
 $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
-$stmt = $conn->query("SELECT * FROM countries Where name='$country'");
+$stmt = $conn->query("SELECT * FROM countries Where name LIKE'%$country%'");
+
 
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
