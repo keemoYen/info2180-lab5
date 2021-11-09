@@ -1,1 +1,33 @@
 /* Add your own styles */
+h1{
+	background-color: blue;
+}
+
+table {
+	border-collapse: collapse;
+}
+thead{
+	padding: 20px;
+}
+
+td{
+	border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+  border-top: 1px solid #cecfd5;
+  border-left: 1px solid #cecfd5;
+  padding: 10px 15px;
+
+}
+
+th{
+	border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+  border-top: 1px solid #cecfd5;
+  border-left: 1px solid #cecfd5;
+  padding: 10px 15px;
+
+}
+
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
