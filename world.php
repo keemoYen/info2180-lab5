@@ -12,6 +12,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 ?>
+
 <table>
   <thead>
     <tr>
